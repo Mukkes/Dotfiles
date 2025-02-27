@@ -1,3 +1,8 @@
+-- Map leader
+vim.g.mapleader = " "
+
+-- Plugin manager lazy
+require("config.lazy")
 
 -- Line numbers.
 vim.opt.nu = true
