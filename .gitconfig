@@ -2,7 +2,8 @@
 	name = Marcel Zwart
 	email = marcelzwart92@gmail.com
 [core]
-	editor = vim
+	editor = nvim
+	eol = lf
 [credential "https://github.com"]
 	helper = 
 	helper = !/usr/bin/gh auth git-credential

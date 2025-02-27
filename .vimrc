@@ -61,5 +61,8 @@ if has('termguicolors')
     set termguicolors
 endif
 
+" Set background to dark so vim uses a colorscheme for a dark terminal
+set background=dark
+
 " Map { to typ both { }, align them en enter input mode inside.
 " :inoremap { <esc>o{<cr>}<esc>O
