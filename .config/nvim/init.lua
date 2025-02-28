@@ -4,8 +4,6 @@ vim.g.mapleader = " "
 -- Plugin manager lazy
 require("config.lazy")
 
-vim.cmd[[colorscheme tokyonight]]
-
 -- Line numbers.
 vim.opt.nu = true
 
@@ -36,3 +34,4 @@ vim.opt.cindent = true
 
 -- set colorscheme
 vim.opt.termguicolors = true
+vim.cmd.colorscheme("tokyonight")
