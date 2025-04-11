@@ -35,3 +35,6 @@ vim.opt.cindent = true
 -- set colorscheme
 vim.opt.termguicolors = true
 vim.cmd.colorscheme("tokyonight")
+
+-- set os clipboard
+vim.opt.clipboard = "unnamedplus"
