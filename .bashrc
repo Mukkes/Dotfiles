@@ -122,3 +122,5 @@ alias dotfiles='/usr/bin/git --git-dir="$HOME/Git/Dotfiles/" --work-tree="$HOME"
 source /usr/share/bash-completion/completions/git
 __git_complete dotfiles __git_main
 
+# Ignore case tab completion
+bind 'set completion-ignore-case on'
