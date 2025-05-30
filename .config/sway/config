@@ -226,3 +226,7 @@ bar {
 }
 
 include /etc/sway/config.d/*
+
+# Clipboard manager
+exec wl-paste -t text --watch clipman store --no-persist
+
