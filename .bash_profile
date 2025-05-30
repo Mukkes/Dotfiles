@@ -4,9 +4,10 @@
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
-if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then
-    exec startx
-fi
+# For starting window manager without display manager.
+# if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then
+#     exec startx
+# fi
 
 export EDITOR="/usr/bin/nvim"
 export QT_STYLE_OVERRIDE=kvantum
