@@ -234,3 +234,6 @@ exec wl-paste -t text --watch clipman store --no-persist
 input * repeat_delay 240
 input * repeat_rate 30
 
+# Enable numlock
+input type:keyboard xkb_numlock enabled
+
