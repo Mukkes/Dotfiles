@@ -237,3 +237,6 @@ input * repeat_rate 30
 # Enable numlock
 input type:keyboard xkb_numlock enabled
 
+# Autotiling (autotiling need to be installed)
+exec --no-startup-id autotiling
+
