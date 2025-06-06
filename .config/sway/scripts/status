@@ -1,0 +1,6 @@
+#!/bin/bash
+while true; do
+    printf '%(%Y-%m-%d %X)T\n';
+    sleep 1;
+done
+
