@@ -247,3 +247,9 @@ exec swayidle -w \
     timeout 305 'swaymsg "output * power off"' \
         resume 'swaymsg "output * power on"'
 
+# Touchpad settings
+input type:touchpad {
+    tap enable
+    pointer_accel 0.2
+    #accel_profile "flat"
+}
