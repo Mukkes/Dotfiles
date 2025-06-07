@@ -257,3 +257,6 @@ input type:touchpad {
     #accel_profile "flat"
 }
 
+# Remove title bar and set border to 3 pixels.
+default_border pixel 3
+
