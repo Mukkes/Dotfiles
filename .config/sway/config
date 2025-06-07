@@ -69,6 +69,9 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
     # Start your launcher
     bindsym $mod+d exec $menu
 
+    # Start Firefox
+    bindsym $mod+w exec firefox
+
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
     # Despite the name, also works for non-floating windows.
@@ -253,3 +256,4 @@ input type:touchpad {
     pointer_accel 0.2
     #accel_profile "flat"
 }
+
