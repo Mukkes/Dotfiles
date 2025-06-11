@@ -260,3 +260,5 @@ input type:touchpad {
 # Remove title bar and set border to 3 pixels.
 default_border pixel 3
 
+# Lock sway
+bindsym $mod+x exec swaylock -f -c 000000
