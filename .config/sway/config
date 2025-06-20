@@ -238,16 +238,23 @@ exec wl-paste -t text --watch clipman store --no-persist
 input * repeat_delay 240
 input * repeat_rate 30
 
-# Enable numlock
-input type:keyboard xkb_numlock enabled
+### Keyboard settings
+#   Enable numlock
+#   Layout switch
+input type:keyboard {
+    xkb_numlock enabled
+    xkb_layout "us,us"
+    xkb_variant ",intl"
+    xkb_options "grp:ctrl_shift_toggle,grp:win_space_toggle"
+}
 
 # Autotiling (autotiling need to be installed)
 exec --no-startup-id autotiling
 
 # Lock session and turn off screen after some time.
 exec swayidle -w \
-    timeout 300 'swaylock -f -c 000000' \
-    timeout 305 'swaymsg "output * power off"' \
+    timeout 600 'swaylock -f -c 000000' \
+    timeout 605 'swaymsg "output * power off"' \
         resume 'swaymsg "output * power on"'
 
 # Touchpad settings
