@@ -245,7 +245,7 @@ input type:keyboard {
     xkb_numlock enabled
     xkb_layout "us,us"
     xkb_variant ",intl"
-    xkb_options "grp:ctrl_shift_toggle,grp:win_space_toggle"
+    xkb_options "grp:rctrl_rshift_toggle,grp:win_space_toggle"
 }
 
 # Autotiling (autotiling need to be installed)
