@@ -2,7 +2,12 @@ return {
     {
         "neovim/nvim-lspconfig",
         config = function()
-            require("lspconfig").ccls.setup {}
+            require("lspconfig").clangd.setup {
+                cmd = {
+                    "clangd",
+                    "--fallback-style=webkit"
+                }
+            }
         end,
     }
 }
