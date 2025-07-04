@@ -10,6 +10,11 @@ return {
             require('telescope').setup {
                 extensions = {
                     fzf = {}
+                },
+                pickers = {
+                    find_files = {
+                        hidden = true
+                    }
                 }
             }
 
