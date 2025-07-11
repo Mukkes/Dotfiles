@@ -18,4 +18,5 @@ __git_complete dotfiles __git_main
 
 # Ignore case tab completion
 bind 'set completion-ignore-case on'
-
+bind 'set show-all-if-ambiguous on'
+bind 'TAB:menu-complete'
