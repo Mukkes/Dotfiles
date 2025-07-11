@@ -32,6 +32,10 @@ vim.opt.linebreak = true
 vim.opt.smartindent = true
 vim.opt.cindent = true
 
+-- Case insensitive search and case sensitive search when searching for capital letters
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+
 -- set colorscheme
 vim.opt.termguicolors = true
 vim.cmd.colorscheme("tokyonight")
@@ -43,9 +47,9 @@ vim.opt.clipboard = "unnamedplus"
 --  Try it with `yap` in normal mode
 --  See `:help vim.highlight.on_yank()`
 vim.api.nvim_create_autocmd("TextYankPost", {
-  desc = "Highlight when yanking (copying) text",
-  group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
-  callback = function()
-    vim.highlight.on_yank()
-  end,
+    desc = "Highlight when yanking (copying) text",
+    group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
+    callback = function()
+        vim.highlight.on_yank()
+    end,
 })
