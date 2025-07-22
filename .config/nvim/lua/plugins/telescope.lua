@@ -20,14 +20,15 @@ return {
 
             require('telescope').load_extension('fzf')
 
-            vim.keymap.set("n", "<leader>f", function()
-                local is_git = os.execute('git rev-parse --is-inside-work-tree') == 0
-                if is_git then
-                    require('telescope.builtin').git_files()
-                else
-                    require('telescope.builtin').find_files()
-                end
-            end)
+            --vim.keymap.set("n", "<leader>f", function()
+            --    local is_git = os.execute('git rev-parse --is-inside-work-tree') == 0
+            --    if is_git then
+            --        require('telescope.builtin').git_files()
+            --    else
+            --        require('telescope.builtin').find_files()
+            --    end
+            --end)
+            vim.keymap.set("n", "<leader>f", require('telescope.builtin').find_files)
             vim.keymap.set("n", "<leader>h", require('telescope.builtin').help_tags)
             vim.keymap.set("n", "<leader>g", require('telescope.builtin').live_grep)
         end
