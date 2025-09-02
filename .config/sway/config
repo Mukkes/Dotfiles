@@ -16,7 +16,7 @@ set $right l
 # Your preferred terminal emulator
 set $term kitty
 # Your preferred application launcher
-set $menu wmenu-run
+set $menu wmenu-run -f "noto:NotoSansMono-Regular 22"
 
 ### Output configuration
 #
@@ -227,6 +227,8 @@ bar {
         background #323232
         inactive_workspace #32323200 #32323200 #5c5c5c
     }
+
+    font pango: Noto Sans Mono Regular 12
 }
 
 include /etc/sway/config.d/*
