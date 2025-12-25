@@ -257,7 +257,9 @@ exec --no-startup-id autotiling
 exec swayidle -w \
     timeout 600 'swaymsg "output * power off"' \
         resume 'swaymsg "output * power on"' \
-    timeout 900 'swaylock -f -c 000000'
+    timeout 605 'swaylock -f -c 000000' \
+    before-sleep 'swaylock -f -c 000000' \
+    lock 'swaylock -f -c 000000'
 
 # Touchpad settings
 input type:touchpad {
