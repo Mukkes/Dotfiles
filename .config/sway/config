@@ -275,12 +275,15 @@ default_border pixel 3
 bindsym $mod+x exec swaylock -f -c 000000
 
 # Apps
+# Find app_id with "swaymsg -t get_tree"
 assign [app_id="kitty"] workspace 1
 assign [app_id="firefox"] workspace 2
 assign [app_id="org.keepassxc.KeePassXC"] workspace 3
 
+# Startup apps
 exec --no-startup-id kitty
 exec --no-startup-id firefox
 exec --no-startup-id keepassxc
 
+# Default workspace.
 workspace number 1
