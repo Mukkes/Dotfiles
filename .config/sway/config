@@ -279,6 +279,7 @@ bindsym $mod+x exec swaylock -f -c 000000
 assign [app_id="kitty"] workspace 1
 assign [app_id="firefox"] workspace 2
 assign [app_id="org.keepassxc.KeePassXC"] workspace 3
+assign [class="KeePassXC"] workspace 3
 
 # Startup apps
 exec --no-startup-id kitty
