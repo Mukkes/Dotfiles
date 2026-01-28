@@ -15,3 +15,6 @@ export QT_STYLE_OVERRIDE=kvantum
 #export QT_QPA_PLATFORMTHEME=kvantum
 
 export VCPKG_ROOT="$HOME/.local/share/vcpkg/"
+
+# Default editor nvim for pacdiff
+export DIFFPROG="/usr/bin/nvim"
