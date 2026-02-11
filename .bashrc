@@ -9,7 +9,9 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-PS1='[\u@\h \W]\$ '
+if [ -f ~/.bash_ps ]; then
+    . ~/.bash_ps
+fi
 
 # Alias for dotfiles git repo
 alias dotfiles='/usr/bin/git --git-dir="$HOME/Git/Dotfiles/" --work-tree="$HOME"'
