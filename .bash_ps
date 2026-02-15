@@ -1,1 +1,8 @@
-PS1='\n\[\033[01;32m\]\u@\h \[\033[01;30m\]\w\n\[\e[0m\]\$ '
+RESET="\[\033[m\]"
+GREEN="\[\033[0;32m\]"
+CYAN="\[\033[0;36m\]"
+WHITE="\[\033[0;37m\]"
+GGREEN="\[$(tput setaf 2)\]"
+
+source ./git-prompt.sh
+PS1='\n'"${GREEN}"'\u@\h '"${WHITE}"'\w'"${CYAN}"'$(__git_ps1 " (%s)")\n'"${RESET}"'\$ '
