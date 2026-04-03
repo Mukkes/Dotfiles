@@ -13,10 +13,14 @@ set $left h
 set $down j
 set $up k
 set $right l
+
 # Your preferred terminal emulator
 set $term foot
+
 # Your preferred application launcher
-set $menu wmenu-run -f "noto:NotoSansMono-Regular 22"
+# set $menu wmenu-run -f "noto:NotoSansMono-Regular 22"
+set $menu fuzzel
+
 # Your preferred file browser
 set $filebrowser thunar
 
