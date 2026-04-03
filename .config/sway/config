@@ -17,6 +17,8 @@ set $right l
 set $term foot
 # Your preferred application launcher
 set $menu wmenu-run -f "noto:NotoSansMono-Regular 22"
+# Your preferred file browser
+set $filebrowser thunar
 
 ### Output configuration
 #
@@ -71,6 +73,9 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 
     # Start Firefox
     bindsym $mod+w exec firefox
+
+    # Start file browser
+    bindsym $mod+n exec thunar
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
