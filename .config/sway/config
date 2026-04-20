@@ -24,6 +24,9 @@ set $menu fuzzel
 # Your preferred file browser
 set $filebrowser thunar
 
+# Power Menu
+set $powermenu ~/.config/sway/scripts/power-menu.sh
+
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
@@ -92,8 +95,11 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
     bindsym $mod+Shift+c reload
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
-#
+    # bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+
+    # Open the power menu
+    bindsym $mod+Shift+e exec $powermenu
+
 # Moving around:
 #
     # Move your focus around
