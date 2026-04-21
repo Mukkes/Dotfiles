@@ -13,11 +13,11 @@ SELECTION="$(printf "$MENU" | fuzzel --dmenu -l "$LINE_COUNT" -w 18 -p "Select a
 
 case $SELECTION in
     *"󰍃 Log out"*)
-        swaymsg exit
+        swaymsg exit;;
     *" Reboot"*)
-        systemctl reboot
+        systemctl reboot;;
     *"󰐥 Shutdown"*)
-        systemctl poweroff
+        systemctl poweroff;;
     # *"󰍃 Log out"*)
     #     if confirm_action "Log out"; then
     #         swaymsg exit
