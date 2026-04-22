@@ -14,7 +14,7 @@ if [ -f ~/.bash_ps ]; then
 fi
 
 # Alias for dotfiles git repo
-alias dotfiles='/usr/bin/git --git-dir="$HOME/Git/Dotfiles/" --work-tree="$HOME"'
+alias dotfiles='/usr/bin/git --git-dir="$HOME/git/Dotfiles/" --work-tree="$HOME"'
 
 # Git complition for dotfiles alias
 source /usr/share/bash-completion/completions/git
