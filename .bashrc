@@ -24,3 +24,6 @@ __git_complete dotfiles __git_main
 bind 'set completion-ignore-case on'
 bind 'set show-all-if-ambiguous on'
 bind 'TAB:menu-complete'
+
+# Set up fzf key bindings and fuzzy completion
+eval "$(fzf --bash)"
