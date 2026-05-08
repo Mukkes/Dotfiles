@@ -291,15 +291,20 @@ bindsym $mod+x exec swaylock -f -c 000000
 
 # Apps
 # Find app_id with "swaymsg -t get_tree"
-assign [app_id="foot"] workspace 1
 assign [app_id="firefox"] workspace 2
-assign [app_id="org.keepassxc.KeePassXC"] workspace 3
-assign [class="KeePassXC"] workspace 3
+for_window [app_id="org.keepassxc.KeePassXC"] move scratchpad
+for_window [class="KeePassXC"] move scratchpad
+# assign [app_id="foot"] workspace 1
+# assing [app_id="org.keepassxc.KeePassXC"] workspace 3
+# assing [class="KeePassXC"] workspace 3
 
 # Startup apps
-exec --no-startup-id foot
+# exec --no-startup-id foot
 exec --no-startup-id firefox
 exec --no-startup-id keepassxc
 
 # Default workspace.
 workspace number 1
+
+exec --no-startup-id foot
+
